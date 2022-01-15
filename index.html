@@ -6,7 +6,17 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Samay Joshi- Portfolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- ========================== Icons ======================= -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.1/css/line.css">
+
+    <!-- ========================== Swiper CSS ======================= -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- ========================== CSS ======================= -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -42,7 +52,7 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#showcase" class="nav__link">
+                        <a href="#portfolio" class="nav__link">
                             <i class="uil uil-images nav__icon"></i>
                             <span>My Work</span>
                         </a>
@@ -96,7 +106,7 @@
                                 <path
                                     d="M37.7,-63.8C50,-58.2,62,-50.4,70.2,-39.5C78.4,-28.5,82.8,-14.2,84.5,1C86.2,16.2,85.2,32.4,78.4,45.8C71.6,59.1,58.9,69.7,44.9,78.2C30.9,86.7,15.4,93.3,-0.4,94C-16.3,94.7,-32.6,89.7,-47,81.3C-61.4,73,-73.9,61.5,-78.7,47.4C-83.5,33.3,-80.6,16.6,-78.6,1.2C-76.6,-14.3,-75.5,-28.7,-70.8,-42.9C-66.1,-57.1,-57.6,-71.2,-45.2,-76.8C-32.8,-82.4,-16.4,-79.4,-1.9,-76.2C12.7,-72.9,25.4,-69.4,37.7,-63.8Z"
                                     transform="translate(100 100)" />
-                                <image class="home__blob-img" x='-12' y="10" xlink:href="images/Profile.png" />
+                                <image class="home__blob-img" x='15' y="30"s xlink:href="images/Profile.png" />
                             </g>
                         </svg>
                     </div>
@@ -749,10 +759,75 @@
         </section>
 
         <!--==================== PORTFOLIO ====================-->
-        <!-- <section class="portfolio section" id="portfolio">
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">My Recent Websites</span>
             
+            <div class="portfolio__container container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="/images/portfolio1.png" alt="" class="portfolio__img">
 
-        </section> -->
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern Website</h3>
+                            <p class="portfolio__description">
+                                I make websites that are flexible all devices including animated interactive components.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right"></i> 
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="/images/portfolio2.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Blogs</h3>
+                            <p class="portfolio__description">
+                                I make blog templates that are modern looking and eye catchy.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right"></i> 
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 3 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="/images/portfolio3.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Brand Logo and UI/UX</h3>
+                            <p class="portfolio__description">
+                                I make brand logos and template designs of elements regarding UI and UX in a website, banner or logo.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right"></i> 
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 4====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="/images/portfolio4.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Tours and Travel Websites</h3>
+                            <p class="portfolio__description">
+                                Tour and Travel, Tourism, Online Stores and much more...
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right"></i> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--==================== PROJECT IN MIND ====================-->
         <!-- <section class="project section">
@@ -774,8 +849,12 @@
     </main>
 
 
+    <!-- ======================= Swiper JS ====================== -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!-- ======================= Main JS ====================== -->
     <script src="/javaScript/main.js"></script>
+
 </body>
 
 </html>

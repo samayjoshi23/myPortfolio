@@ -80,7 +80,10 @@ modalCloses.forEach(modalClose => {
   })
 })
 /*==================== PORTFOLIO SWIPER  ====================*/
-
+var swiper = new Swiper(".portfolio__container", {
+  effect: "cards",
+  grabCursor: true,
+});
 
 /*==================== TESTIMONIAL ====================*/
 
