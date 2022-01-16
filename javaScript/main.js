@@ -58,23 +58,23 @@ selectedBtn.forEach((btn, index) => {
   });
 
 /*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services__modal');
-const modalBtns = document.querySelectorAll('.services__button');
-const modalCloses = document.querySelectorAll('.services__modal-close');
+const servicesModalViews = document.querySelectorAll('.services__modal');
+const servicesModalBtns = document.querySelectorAll('.services__button');
+const servicesModalCloses = document.querySelectorAll('.services__modal-close');
 
 let modal = function(modalClick){
-  modalViews[modalClick].classList.add('active-modal');
+  servicesModalViews[modalClick].classList.add('active-modal');
 }
 
-modalBtns.forEach((modalBtn, i) => {
+servicesModalBtns.forEach((modalBtn, i) => {
   modalBtn.addEventListener('click', () => {
     modal(i);
   })
 })
 
-modalCloses.forEach(modalClose => {
+servicesModalCloses.forEach(modalClose => {
   modalClose.addEventListener('click', () => {
-    modalViews.forEach(modalView => {
+    servicesModalViews.forEach(modalView => {
       modalView.classList.remove('active-modal');
     })
   })
@@ -84,6 +84,41 @@ var swiper = new Swiper(".portfolio__container", {
   effect: "cards",
   grabCursor: true,
 });
+
+/*==================== PORTFOLIO demo SWIPER  ====================*/
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + "</span>";
+    },
+  },
+});
+
+/*==================== PORTFOLIO MODAL ====================*/
+const portfolioModalViews = document.querySelectorAll('.portfolio__modal');
+const portfolioModalBtns = document.querySelectorAll('.portfolio__button');
+const portfolioModalCloses = document.querySelectorAll('.portfolio__modal-close');
+
+let portfolioModal = function(modalClick){
+  portfolioModalViews[modalClick].classList.add('active-modal');
+}
+
+portfolioModalBtns.forEach((modalBtn, i) => {
+  modalBtn.addEventListener('click', () => {
+    portfolioModal(i);
+  })
+})
+
+portfolioModalCloses.forEach(modalClose => {
+  modalClose.addEventListener('click', () => {
+    portfolioModalViews.forEach(modalView => {
+      modalView.classList.remove('active-modal');
+    })
+  })
+})
+
 
 /*==================== TESTIMONIAL ====================*/
 
