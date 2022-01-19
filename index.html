@@ -77,7 +77,7 @@
     </header>
 
     <!--==================== MAIN ====================-->
-    <main class="main"> 
+    <main class="main">
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
             <div class="home__container container grid">
@@ -762,7 +762,7 @@
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">My Recent Websites</span>
-
+            
             <aside class="portfolio__modal-container">
 
                 <div class="portfolio__modal">
@@ -770,7 +770,7 @@
                         <h4 class="portfolio__modal-title">Tours and Travel Websites</h4>
                         <i class="uil uil-times-circle portfolio__modal-close"></i>
 
-                        <div class="swiper mySwiper">
+                        <div class="swiper mySwiper portfolio-inner-swiper">
                             <div class="swiper-wrapper">
                                 <div class="portfolio__demo-slides swiper-slide">
                                     <h5 class="portfolio__demo-slides-title">Camping Website</h5>
@@ -807,7 +807,7 @@
                         <h4 class="portfolio__modal-title">Blogs</h4>
                         <i class="uil uil-times-circle portfolio__modal-close"></i>
 
-                        <div class="swiper mySwiper">
+                        <div class="swiper mySwiper portfolio-inner-swiper">
                             <div class="swiper-wrapper">
                                 <div class="portfolio__demo-slides swiper-slide">
                                     <h5 class="portfolio__demo-slides-title">Blog template 1</h5>
@@ -825,35 +825,10 @@
 
                 <div class="portfolio__modal">
                     <div class="portfolio__modal-content">
-                        <h4 class="portfolio__modal-title">Modern Websites</h4>
-                        <i class="uil uil-times-circle portfolio__modal-close"></i>
-
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="portfolio__demo-slides swiper-slide">
-                                    <h5 class="portfolio__demo-slides-title">Ateesha Organics 1</h5>
-                                    <img src="/images/work/AteeshaOrganics1.jpg" alt="img-1">
-                                </div>
-                                <div class="portfolio__demo-slides swiper-slide">
-                                    <h5 class="portfolio__demo-slides-title">Ateesha Organics 1</h5>
-                                    <img src="/images/work/AteeshaOrganics2.jpg" alt="img-1">
-                                </div>
-                                <div class="portfolio__demo-slides swiper-slide">
-                                    <h5 class="portfolio__demo-slides-title">Food Court</h5>
-                                    <img src="/images/work/foodCourt1.jpg" alt="img-1">
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__modal">
-                    <div class="portfolio__modal-content">
                         <h4 class="portfolio__modal-title">Brand Logo and UI/UX</h4>
                         <i class="uil uil-times-circle portfolio__modal-close"></i>
 
-                        <div class="swiper mySwiper">
+                        <div class="swiper mySwiper portfolio-inner-swiper">
                             <div class="swiper-wrapper">
                                 <div class="portfolio__demo-slides swiper-slide">
                                     <h5 class="portfolio__demo-slides-title">Pet Shop Brand Logo</h5>
@@ -866,6 +841,31 @@
                                 <div class="portfolio__demo-slides swiper-slide">
                                     <h5 class="portfolio__demo-slides-title">Blog template 2</h5>
                                     <img src="/images/work/UX elements.jpg" alt="img-3">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__modal">
+                    <div class="portfolio__modal-content">
+                        <h4 class="portfolio__modal-title">Modern Websites</h4>
+                        <i class="uil uil-times-circle portfolio__modal-close"></i>
+
+                        <div class="swiper mySwiper portfolio-inner-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="portfolio__demo-slides swiper-slide">
+                                    <h5 class="portfolio__demo-slides-title">Ateesha Organics 1</h5>
+                                    <img src="/images/work/AteeshaOrganics1.jpg" alt="img-1">
+                                </div>
+                                <div class="portfolio__demo-slides swiper-slide">
+                                    <h5 class="portfolio__demo-slides-title">Ateesha Organics 1</h5>
+                                    <img src="/images/work/AteeshaOrganics2.jpg" alt="img-1">
+                                </div>
+                                <div class="portfolio__demo-slides swiper-slide">
+                                    <h5 class="portfolio__demo-slides-title">Food Court</h5>
+                                    <img src="/images/work/foodCourt1.jpg" alt="img-1">
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -891,7 +891,6 @@
                                 <i class="uil uil-arrow-right"></i>
                             </span>
                         </div>
-
                     </div>
                     <!--==================== PORTFOLIO 2 ====================-->
                     <div class="portfolio__content grid swiper-slide">
@@ -915,8 +914,7 @@
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Brand Logo and UI/UX</h3>
                             <p class="portfolio__description">
-                                I make brand logos and template designs of elements regarding UI and UX in a website,
-                                banner or logo.
+                                I make brand logos and template designs of elements in a website, banner or logo.
                             </p>
                             <span class="button button--flex button--small portfolio__button">
                                 Demo
@@ -929,7 +927,7 @@
                         <img src="/images/portfolio1.png" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title"></h3>
+                            <h3 class="portfolio__title">Responsive and modern Websites</h3>
                             <p class="portfolio__description">
                                 I make websites that are flexible all devices including animated interactive components.
                             </p>
@@ -962,7 +960,7 @@
         </section>
 
         <!--==================== TESTIMONIAL ====================-->
-        
+
         <!-- <section class="testimonial section">
             <h2 class="section__title">Testimonial</h2>
             <span class="section__subtitle">My client saying</span>
@@ -983,7 +981,7 @@
                 <div>
                     <div class="contact__information">
                         <i class="uil uil-phone-alt contact__icon"></i>
-                        
+
                         <div>
                             <h3 class="contact__title">Call Me</h3>
                             <span class="contact__subtitle">+91 - 12345 67890</span>
@@ -992,7 +990,7 @@
 
                     <div class="contact__information">
                         <i class="uil uil-envelope-alt contact__icon"></i>
-                        
+
                         <div>
                             <h3 class="contact__title">Mail Me</h3>
                             <span class="contact__subtitle">sam.science97@gmail.com</span>
@@ -1001,7 +999,7 @@
 
                     <div class="contact__information">
                         <i class="uil uil-map-marker contact__icon"></i>
-                        
+
                         <div>
                             <h3 class="contact__title">Meet Me</h3>
                             <span class="contact__subtitle">Jabalpur, Madhya Pradesh</span>
@@ -1012,19 +1010,23 @@
                 <form action="" class="contact__form grid">
                     <div class="contact__content">
                         <label for="name" class="contact__label">Name</label>
-                        <input type="text" class="contact__input" id="name" name="name" placeholder="Enter Name here" required>
+                        <input type="text" class="contact__input" id="name" name="name" placeholder="Enter Name here"
+                            required>
                     </div>
                     <div class="contact__content">
                         <label for="num" class="contact__label">Contact No.</label>
-                        <input type="text" class="contact__input" id="num" name="number" placeholder="Whatsapp or Calling Number" required>
+                        <input type="text" class="contact__input" id="num" name="number"
+                            placeholder="Whatsapp or Calling Number" required>
                     </div>
                     <div class="contact__content">
                         <label for="email" class="contact__label">Email</label>
-                        <input type="email" class="contact__input" id="email" name="email" placeholder="Enter Email here" required>
+                        <input type="email" class="contact__input" id="email" name="email"
+                            placeholder="Enter Email here" required>
                     </div>
                     <div class="contact__content">
                         <label for="project" class="contact__label">For project</label>
-                        <textarea name="project" class="contact__input" id="project" cols="0" rows="5" placeholder="Small description of your project"></textarea>
+                        <textarea name="project" class="contact__input" id="project" cols="0" rows="5"
+                            placeholder="Small description of your project"></textarea>
                     </div>
                     <div>
                         <!-- <a href="#" class="button button--flex">

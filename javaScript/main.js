@@ -80,10 +80,20 @@ servicesModalCloses.forEach(modalClose => {
   })
 })
 /*==================== PORTFOLIO SWIPER  ====================*/
-var swiper = new Swiper(".portfolio__container", {
-  effect: "cards",
+
+var swiper2 = new Swiper(".portfolio__container", {
   grabCursor: true,
-  loop: true
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: ["-120%", 0, -500],
+    },
+    next: {
+      shadow: true,
+      translate: ["120%", 0, -500],
+    },
+  },
 });
 
 /*==================== PORTFOLIO demo SWIPER  ====================*/
