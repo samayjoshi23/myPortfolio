@@ -115,6 +115,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 main{
@@ -370,6 +371,7 @@ img {
   border-radius: 0.5rem;
   justify-content: center;
   align-self: center;
+  margin: 0 auto;
 }
 .about__description {
   text-align: center;
