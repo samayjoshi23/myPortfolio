@@ -87,11 +87,11 @@ var swiper2 = new Swiper(".portfolio__container", {
   creativeEffect: {
     prev: {
       shadow: true,
-      translate: ["-120%", 0, -500],
+      translate: ["-40%", 0, -200],
     },
     next: {
       shadow: true,
-      translate: ["120%", 0, -500],
+      translate: ["80%", 0, -200],
     },
   },
 });
